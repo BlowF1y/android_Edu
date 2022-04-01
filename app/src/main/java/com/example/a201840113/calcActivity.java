@@ -9,31 +9,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class calcActivity extends AppCompatActivity {
     private TextView textview;
-    private MainActivity activity;
+    private calcActivity activity;
 
 
-    private Button btn_0;
-    private Button btn_1;
-    private Button btn_2;
-    private Button btn_3;
-    private Button btn_4;
-    private Button btn_5;
-    private Button btn_6;
-    private Button btn_7;
-    private Button btn_8;
-    private Button btn_9;
-    private Button btn_multiple;
-    private Button btn_subtraction;
-    private Button btn_division;
-    private Button btn_plus;
-    private Button btn_result;
-    private Button btn_erase;
+    private Button btn_0, btn_1, btn_2, btn_3, btn_4, btn_5, btn_6, btn_7, btn_8, btn_9;
+    private Button btn_multiple, btn_subtraction, btn_division, btn_plus, btn_result, btn_erase;
 
     private boolean ok;
-    private int a;
-    private int b;
+    private int a, b;
     private String c;
 
     public void btn_click(View view) {
@@ -163,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calc);
 
     }
 
