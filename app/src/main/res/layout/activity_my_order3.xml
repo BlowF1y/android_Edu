@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order.MyOrder3Activity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="콜라추가"
+            android:textSize="40dp"/>
+        <RadioGroup
+            android:id="@+id/rg_coke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_cokeOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="콜라추가" />
+
+            <RadioButton
+                android:id="@+id/rb_cokeNO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="콜라추가 안함" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_order_next_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.a201840113.Order.MyOrderActivity;
+
 public class InitActivity extends AppCompatActivity {
 
     @Override
@@ -48,12 +50,30 @@ public class InitActivity extends AppCompatActivity {
             }
         });
 
+        Button Research = findViewById(R.id.btn_research);
+        Research.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ResearchIntent = new Intent(getApplicationContext(), researchActivity.class);
+                startActivity(ResearchIntent);
+            }
+        });
+
         Button List_cust = findViewById(R.id.btn_move_List_custom);
         List_cust.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent customIntent = new Intent(getApplicationContext(), ListCustomActivity.class);
                 startActivity(customIntent);
+            }
+        });
+
+        Button order = findViewById(R.id.btn_Myorder);
+        order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent orderIntent = new Intent(getApplicationContext(), MyOrderActivity.class);
+                startActivity(orderIntent);
             }
         });
 
