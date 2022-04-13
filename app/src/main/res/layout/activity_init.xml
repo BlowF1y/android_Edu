@@ -32,5 +32,20 @@
             android:layout_margin="10dp"
 
             android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_move_List"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="List"
+            android:layout_margin="10dp"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/btn_move_List_custom"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Custom_List"
+            android:layout_margin="10dp"
+            android:textSize="30dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
