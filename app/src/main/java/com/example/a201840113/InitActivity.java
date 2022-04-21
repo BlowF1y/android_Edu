@@ -77,6 +77,15 @@ public class InitActivity extends AppCompatActivity {
             }
         });
 
+        Button shared = findViewById(R.id.btn_shared);
+        shared.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sharedIntent = new Intent(getApplicationContext(), SharedPreferenceActivity.class);
+                startActivity(sharedIntent);
+            }
+        });
+
 
 
 

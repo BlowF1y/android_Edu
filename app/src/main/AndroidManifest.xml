@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.201840113김영민">
         <activity
+            android:name=".SharedPreferenceActivity"
+            android:exported="false" />
+        <activity
             android:name=".Order.MyOrderResultActivity"
             android:exported="false" />
         <activity
